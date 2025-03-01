@@ -19,10 +19,10 @@ class Task:
 class Task_Manager:
 
     def __init__(self):
-        self.tasks = []  # Список задач
+        self.tasks = [] 
 
     def create(self, task):
-        task.id = len(self.tasks) + 1  # Присваиваем уникальный ID
+        task.id = len(self.tasks) + 1
         self.tasks.append(task)
 
     def read(self):
@@ -45,3 +45,5 @@ class Task_Manager:
     def filter(self, status):
         return [task for task in self.tasks if task.status == status]
 
+def aboba():
+    pass
