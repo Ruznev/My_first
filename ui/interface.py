@@ -4,7 +4,7 @@ from answer.src.database import init_db, save_db, load_db
 tm = Task_Manager
 manager = Task_Manager()  
 
-def run_cli():
+def main_menu():
     init_db()  
     load_db(manager)  
 
@@ -97,4 +97,4 @@ def save_and_exit(manager):
     exit(0)
 
 if __name__ == "__main__":
-    run_cli()
+    main_menu()
