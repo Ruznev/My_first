@@ -1,3 +1,4 @@
+from uuid import uuid4
 class Task:
     def __init__(self, title, description, status="Не выполнено", due_date=None, priority="Средний", category="Работа"):
         self.id = None
